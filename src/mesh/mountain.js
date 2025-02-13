@@ -16,6 +16,8 @@ export default function printMountain() {
         new THREE.MeshStandardMaterial({ color: 0x609966 }),
     ]
     const mountain = new THREE.Mesh(geometry, materials);
+    mountain.castShadow = true;
+    mountain.receiveShadow = true;
 
     return mountain;
 }

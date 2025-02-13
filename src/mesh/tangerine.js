@@ -47,7 +47,16 @@ export default function prinTangerine() {
     leaves.add(leaf);
 
     tangerine.add(body);
+    for (const mesh of body.children) {
+        mesh.castShadow = true;
+        mesh.receiveShadow = true;
+    }
+
     tangerine.add(leaves);
+    for (const mesh of leaves.children) {
+        mesh.castShadow = true;
+        mesh.receiveShadow = true;
+    }
 
     return tangerine;
 }
