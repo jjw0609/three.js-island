@@ -61,7 +61,7 @@ myChar.rotation.y = Math.PI / -8;
 scene.add(myChar);
 
 const modelLoader = new GLTFLoader();
-modelLoader.load('../../src/models/bunny.glb', gltf => {
+modelLoader.load('../models/bunny.glb', gltf => {
     const model = gltf.scene;
     model.position.set(-3, -1.29, 2);
     model.scale.set(0.4, 0.4, 0.4);
