@@ -4,9 +4,9 @@ export default function prinTangerine() {
 
     // 한라봉
     const loader = new THREE.TextureLoader();
-    const basecolor = loader.load('/textures/orange/Orange_001_COLOR.jpg');
-    const normal = loader.load('/textures/orange/Orange_001_NORM.jpg');
-    const rough = loader.load('/textures/orange/Orange_001_ROUGH.jpg');
+    const basecolor = loader.load('./textures/orange/Orange_001_COLOR.jpg');
+    const normal = loader.load('./textures/orange/Orange_001_NORM.jpg');
+    const rough = loader.load('./textures/orange/Orange_001_ROUGH.jpg');
     const tangerine = new THREE.Group();
     const body = new THREE.Group();
     const bodyMaterial = new THREE.MeshStandardMaterial({

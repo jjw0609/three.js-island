@@ -5,10 +5,10 @@ export default function printTree() {
 
 
     const loader = new THREE.TextureLoader();
-    const basecolor = loader.load('/textures/wood/wood_basecolor.jpg');
-    const normal = loader.load('/textures/wood/wood_normal.jpg');
-    const rough = loader.load('/textures/wood/wood_roughness.jpg');
-    const height = loader.load('/textures/wood/wood_height.jpg');
+    const basecolor = loader.load('./textures/wood/wood_basecolor.jpg');
+    const normal = loader.load('./textures/wood/wood_normal.jpg');
+    const rough = loader.load('./textures/wood/wood_roughness.jpg');
+    const height = loader.load('./textures/wood/wood_height.jpg');
 
     // 나무
     const tree = new THREE.Group();
