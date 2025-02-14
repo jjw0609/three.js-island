@@ -4,9 +4,9 @@ export default function printStone() {
   const Stone = new THREE.Group();
 
   const textureLoader = new THREE.TextureLoader();
-  const stoneBase = textureLoader.load('../textures/stone/stone_basecolor.jpg')
-  const stoneNormal = textureLoader.load('../textures/stone/stone_normal.jpg')
-  const stoneRoughness = textureLoader.load('../textures/stone/stone_roughness.jpg')
+  const stoneBase = textureLoader.load('/textures/stone/stone_basecolor.jpg')
+  const stoneNormal = textureLoader.load('/textures/stone/stone_normal.jpg')
+  const stoneRoughness = textureLoader.load('/textures/stone/stone_roughness.jpg')
 
   const stoneMaterial = new THREE.MeshStandardMaterial({
     color: 0x565656,
